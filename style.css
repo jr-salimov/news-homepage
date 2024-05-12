@@ -183,10 +183,22 @@ p {
 @media (max-width: 960px) {
   body {
     overflow-x: hidden;
+    gap: 0;
+  }
+
+  nav {
+    display: none;
   }
 
   .menu-img {
-    display: flex;
+    display: grid;
+    cursor: pointer;
+  }
+
+  .hl-img {
+    width: 22.8rem;
+    height: 10rem;
+    object-fit: contain;
   }
 
   main,
@@ -194,23 +206,30 @@ p {
   .categories {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+  }
+
+  .hl-article,
+  .news-section {
+    max-width: 21rem;
   }
 
   .hl-article {
     gap: 0;
   }
 
-  .hl-section img {
-    margin: 0;
+  header,
+  .hl-section,
+  .news-section {
+    margin: 1rem 2rem;
   }
 
-  .hl-article h1 {
-    margin: 0;
-  }
-
+  .hl-article h1,
   .hl-article p {
     margin: 0;
+  }
+
+  .categories {
+    margin: 2rem;
   }
 
   .break {
